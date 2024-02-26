@@ -21,7 +21,9 @@
       "@constants": ["./src/constants"],
       "@constants/*": ["./src/constants/*"],
       "@assets": ["./src/assets"],
-      "@assets/*": ["./src/assets/*"]
+      "@assets/*": ["./src/assets/*"],
+      "@styles": ["./src/styles"],
+      "@styles/*": ["./src/styles/*"]
     }
   },
   "include": ["./App.tsx", "src/**/*", "src/type/index.d.ts", "custom.d.ts"]

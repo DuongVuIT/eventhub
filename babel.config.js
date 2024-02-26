@@ -15,6 +15,7 @@ module.exports = {
           '@navigator': './src/navigator',
           '@constants': './src/constants',
           '@assets': './src/assets',
+          '@styles': './src/styles',
         },
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
       },

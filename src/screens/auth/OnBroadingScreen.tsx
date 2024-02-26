@@ -1,4 +1,7 @@
+import TextComponent from '@components/TextComponent';
 import {appInfo} from '@constants/appInfo';
+import {colors} from '@constants/colors';
+import {fontFamily} from '@constants/fontFamily';
 import {globalStyles} from '@styles/globalStyles';
 import React, {useState} from 'react';
 import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
@@ -54,13 +57,21 @@ const OnBroadingScreen = ({navigation}: any) => {
           alignItems: 'center',
         }}>
         <TouchableOpacity onPress={() => navigation.navigate('LoginScreen')}>
-          <Text>Skip</Text>
+          <TextComponent
+            text="Skip"
+            color={colors.gray2}
+            font={fontFamily.medium}
+          />
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() =>
             index < 2 ? setIndex(index + 1) : navigation.navigate('LoginScreen')
           }>
-          <Text>Next</Text>
+          <TextComponent
+            text="Next"
+            color={colors.gray2}
+            font={fontFamily.medium}
+          />
         </TouchableOpacity>
       </View>
     </View>
